@@ -1,0 +1,16 @@
+/* Tablet views ****************/
+@media only screen and (min-width: 37.5em) {
+
+    main {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    section:nth-child(3) {
+        grid-column: span 2;
+    }
+
+    /* main picture {}
+
+    main section picture img {} */
+ }

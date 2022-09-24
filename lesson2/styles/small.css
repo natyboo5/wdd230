@@ -1,0 +1,46 @@
+body{
+    font-size: 18px;
+    line-height: 1.5;
+    height:100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header,
+footer {
+    font-family: 'Lora', serif;
+    text-align: center;
+    padding: 2.5rem; /*add padding to all the content */
+    background-color: rgb(39, 136, 151);
+    color:rgb(213, 234, 227);
+}
+
+
+h3 {
+    font-style:italic;
+    font-weight: bold;
+    background-color: rgb(39, 136, 151);
+    color:rgb(213, 234, 227);
+    padding: 1rem;
+}
+p {
+    font-weight: bold;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+}
+
+main section {
+    /* margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px; */
+    border: 1px solid black;
+    padding: 0 1rem;
+    background-color: rgb(154, 231, 227);
+    border-radius: 10px 10px 10px 10px;
+}
+/* main picture {}
+/* .principle {}  */
