@@ -42,5 +42,9 @@ main section {
     background-color: rgb(154, 231, 227);
     border-radius: 10px 10px 10px 10px;
 }
-/* main picture {}
-/* .principle {}  */
+
+.principle{
+    display: block;
+    margin: 2rem auto;
+    width: 90%;
+}
