@@ -12,18 +12,19 @@ main,
 nav {
     max-width: 65rem;
     margin: 0 auto; /* move all the items to the center */
-    padding: 0.75rem; /* add padding to all the content */
 }
+
 header,
 footer {
     font-family: 'Lora', serif;
     display: flex;
     flex-flow: column;
     align-items: center;
-    padding: 1.5rem; /*add padding to all the content */
+    padding: 1rem; /*add padding to all the content */
     background-color: rgb(39, 136, 151);
     color:rgb(213, 234, 227);
 }
+
 
 /* Navigation Bar */
 nav {
@@ -40,7 +41,7 @@ nav ul li a {
 	display: block;
 	color: rgb(39, 136, 151);
 	text-align: center;
-	padding: 0.75rem;
+	padding: 1rem;
     padding-left: 0px;
 	text-decoration: none;
     font-size: 1.2rem;
@@ -56,7 +57,7 @@ h3 {
     font-weight: bold;
     background-color: rgb(39, 136, 151);
     color:rgb(213, 234, 227);
-    padding: .8rem;
+    padding: .75rem;
     text-align: center;
     font-family: 'Lora', serif;
 }
@@ -64,13 +65,12 @@ h3 {
 p {
     /* font-weight: bold; */
     text-align: center;
-    padding: .8rem;
+    padding: 1rem;
 }
 
 
 main section {
     /* border: 1px solid black; */
-    padding: 0 1rem;
     background-color: rgb(220, 237, 237);
     border-radius: 10px 10px 10px 10px;
 }
