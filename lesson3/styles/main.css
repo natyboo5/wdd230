@@ -19,7 +19,7 @@ footer {
     font-family: 'Lora', serif;
     display: flex;
     flex-flow: column;
-    align-items: center;
+    align-items:center;
     padding: 1rem; /*add padding to all the content */
     background-color: rgb(39, 136, 151);
     color:rgb(213, 234, 227);
@@ -172,8 +172,12 @@ height: 10em;
 
 	/* Horizontal Menu Examples */
 	/* Flex *********************/
-	 		nav ul { display: flex; }
-		  nav ul li { flex: 1 1 auto; } 
+    nav ul { 
+        display: flex; 
+    }
+    nav ul li { 
+        flex: 1 1 auto; 
+    } 
 
 	/* Grid *********************/
 /* 	nav ul {

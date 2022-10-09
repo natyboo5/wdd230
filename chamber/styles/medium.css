@@ -1,0 +1,88 @@
+/*35rem is also 560px when basefont is 16px*/
+@media only screen and (min-width: 32.5em) {
+	header img {
+		width: 100%;
+	}
+
+	.headings h1 {
+		font-size: 2rem;
+		margin: 0;
+	}
+
+	.m {
+		letter-spacing: 1.5pt;
+		font-size: 0.9rem;
+	}
+
+	
+	/* Hamburger Button Styling */
+
+	nav ul.open {
+		display: flex;
+	}
+
+	nav ul li a {
+		border: none;
+	}
+
+		
+	/*Main section styling*/
+	main {
+		grid-template-columns: 25% 25% 25% 25%;
+		}
+	.hero {
+		grid-column: 1/-1;
+		grid-row: 1;
+	}
+	.news {
+		grid-column: 1/-1;
+		grid-row: 2;
+	}
+	.spotlight {
+		grid-auto-flow: column;
+		grid-column: 1/-1;
+		grid-row: 3;
+	}
+	.spotlight3 {
+		display:none;
+	}
+	.join {
+		display:none;
+	}
+	.event {
+		grid-column: 1/4;
+		grid-row: 4;
+	}
+	.weather {
+		grid-column: 4/5;
+		grid-row: 4;
+	}
+
+	/*Footer*/
+	footer {
+		display: grid; 
+		grid-template-columns: 25% 50% 25%;
+		padding: 10px;
+	
+	}
+	.logofooter{
+		margin-left: 100px;
+		margin-top: 5px;
+		margin-bottom: 20px;
+
+	}
+	.location{
+		text-align: left;
+		margin-top: 20px;
+		margin-right: 100px;
+	}
+	.contact{
+		margin-top: 15px;
+
+	}
+
+	.author {
+		grid-column: 1/-1;
+		grid-row: 2;
+	}
+}
