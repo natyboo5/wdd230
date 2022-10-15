@@ -28,8 +28,14 @@
 		
 	/*Main section styling*/
 	main {
+		display: grid;
 		grid-template-columns: 25% 25% 25% 25%;
-		}
+		grid-gap: 1rem;
+	}
+	main section{
+		margin-bottom: 0;
+	}
+	
 	.hero {
 		grid-column: 1/-1;
 		grid-row: 1;
@@ -46,17 +52,34 @@
 	.spotlight3 {
 		display:none;
 	}
-	.join {
-		display:none;
+	.joinUs {
+		display: grid;
+		grid-column: 1/-1;
+		grid-row: 4;
 	}
 	.event {
 		grid-column: 1/4;
-		grid-row: 4;
+		grid-row: 5;
 	}
 	.weather {
 		grid-column: 4/5;
-		grid-row: 4;
+		grid-row: 5;
 	}
+	
+
+	.joinUsBtn {
+		font-weight: bold;
+		font-size: 1rem;
+		color: white;
+		margin: 1rem;
+		display: block;
+		border-radius: 20px;
+		border: none;
+		background-color:#42b3ab;
+		color: white;
+		font-style: italic;
+	}
+
 
 	/*Footer*/
 	footer {

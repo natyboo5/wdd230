@@ -1,9 +1,9 @@
 body {
 	padding: 0;
 	margin: 0 auto;
-    font-size: 18px; 
-    line-height: 1.5;
-	max-width: 900px;
+    font-size: 16px; 
+    line-height: 1.5rem;
+	max-width: 1050px;
     font-family: 'Roboto', 'Arial', serif;
 }
 
@@ -91,10 +91,7 @@ nav button{
     color: #42b3ab;
 	
 }
-nav {
-   
-	
-}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -132,31 +129,29 @@ nav ul.open {
 /* Main section styling*/
 
 main{
-	display: grid;
-	grid-area: 1fr;
-	grid-gap: 3px;
+	display: block;
 	padding: 1rem 0;
-	font-size: .8rem;
+	width: 100%;
 }
 
-
 main section {
-	border: 1px solid gray;
 	background-color: rgb(231, 230, 230);
-	padding-bottom: 10rem;
+	text-align: center;
+	/* border: 1px solid black; */
+	margin-bottom: 1rem;
 }
 
 main section div {
 	border: 1px solid gray;
-	background-color: rgb(231, 230, 230);
-	padding-bottom: 10rem;
+	/* background-color: rgb(231, 230, 230); */
+	/* padding-bottom: 10rem; */
 	margin: 1rem 1rem;
 }
 
 .spotlight {
 	display: grid;
-	grid-area: 1fr;
-	padding-bottom: 0rem;
+	/* grid-area: 1fr; */
+	/* padding-bottom: 0rem; */
 }
 
 
@@ -188,6 +183,70 @@ footer {
 	padding-top: 1rem;
 	font-family: 'Roboto', 'Arial', serif;;
     font-size: .7rem;
-	border-top: 2px solid white;;
+	border-top: 2px solid white;
   }
 
+/****MAIN SECTION ****/
+
+section h3 {
+	color:#196D94;
+	font-family: 'Lora', 'Arial', serif;
+	/* text-decoration: double; */
+	font-weight: bold;
+}
+
+/* Welcome */
+.hero {
+	position: relative;
+}
+
+.heroimg img{
+	width: 100%;
+
+}
+.welcome {
+	position: absolute;
+	top: 1rem;
+	left: 2rem;
+	color: white;
+	font-size: 1.5rem;
+	letter-spacing: 1px;
+}
+
+.joinChamberBtn {
+	position: absolute;
+	bottom: 25px;
+	right: 25px;
+	border-radius: 25px;
+	border: none;
+	background-color:#42b3ab;
+	color: white;
+}
+
+.joinChamber {
+	margin-right: 2rem;
+	margin-left: 2rem;
+	letter-spacing: 2px;
+}
+
+/*Event */
+
+.event {
+	display: grid;
+}
+
+/*Join Us */
+
+.joinUs {
+	display: none
+
+} 
+
+/* Spotlight 1 */
+.spotSlogan {
+	font-style: italic;
+}
+.spotContact {
+	border: none;
+	border-top: 2px solid black;
+}
