@@ -208,7 +208,7 @@ section h3 {
 	position: absolute;
 	top: 1rem;
 	left: 2rem;
-	color: white;
+	color: #11385c;
 	font-size: 1.5rem;
 	letter-spacing: 1px;
 }
@@ -246,7 +246,42 @@ section h3 {
 .spotSlogan {
 	font-style: italic;
 }
+.spotlight{
+	display: grid;
+	/* grid-gap: .5rem; */
+	margin: 0;
+	background:rgb(231, 230, 230);
+	
+}
+.spotlight div {
+	margin: 0;
+	padding: 0 .5rem;
+}
 .spotContact {
 	border: none;
 	border-top: 2px solid black;
+}
+
+/* Weather */
+
+.weather-top {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.weather-center {
+	border: none;
+	text-align: center;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.weather-bottom {
+	border: none;
+	border-top: 2px solid black;
+	padding: 1rem 0;
 }

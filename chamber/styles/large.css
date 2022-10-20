@@ -1,4 +1,4 @@
-/*64rem is also 1028px when basefont is 16px*/
+/*64rem is also 1024px when basefont is 16px*/
 @media only screen and (min-width: 64em) {
 
     /* Hamburger Button Styling */

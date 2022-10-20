@@ -1,5 +1,5 @@
 /*35rem is also 560px when basefont is 16px*/
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 35em) {
 	header img {
 		width: 100%;
 	}
@@ -30,7 +30,7 @@
 	main {
 		display: grid;
 		grid-template-columns: 25% 25% 25% 25%;
-		grid-gap: 1rem;
+		grid-gap: .8rem;
 	}
 	main section{
 		margin-bottom: 0;

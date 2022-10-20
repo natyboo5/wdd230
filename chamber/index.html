@@ -25,7 +25,7 @@
         <section class="headertop">
             <div class="logo">
                 <picture>
-                    <img src="images/logo_white_large.png" alt="Logo of Tradition Chamber of Commerce">
+                    <img src="images/logo_white_large.webp" alt="Logo of Tradition Chamber of Commerce">
                 </picture>
                 <section class="headings">
                     <h1>Tradition</h1>
@@ -59,12 +59,13 @@
         <section class="hero">
             <h3 class="welcome">Welcome to Tradition</h3>
             <picture class="heroimg">
-                <img src="images/TRimag(2).png" alt="hero image">
+                <source media="(min-width: 1024px)" srcset="images/wdd230-org_large.webp">
+                <source media="(min-width: 560px)" srcset="images/wdd230-org_medium.webp">
+                <img src="images/wdd230-org_small.webp" alt="hero image">
             </picture>
             <button class="joinChamberBtn">
                 <h2 class="joinChamber">JOIN THE CHAMBER</h2>
             </button>
-        
         </section>
         <section class="event">
             <h3> Ribbon Cutting</h3>
@@ -73,15 +74,21 @@
         </section>
         <section class="weather">
             <h3>Weather</h3>
-            <picture>
-                <img src="images/weather_sun_cloud.png" alt="picture of sun and cloud"> 33°
-            </picture>
-            
-            <p>Partly Cloudy</p>
-            <div>
-                Wind Speed:   2.5km/h <br>
-                Wind Chill:     N/A
-            </div>
+                <div class="weather-top">
+                  <picture>
+                      <img src="images/weather_sun_cloud.png" alt="picture of sun and cloud">
+                  </picture>
+                  <p><span class="degrees"></span>°</p>
+                </div>
+                <div class="weather-center">
+                  <p>Partly Cloudy</p>
+                </div>
+                <div class="weather-bottom">  
+                  <p>Speed: <span class="speed"></span></p>
+                  <p>Wind Chill: <span class="wind"></span></p>
+                </div>
+            </section>
+
         </section>
         <section class="news">
             <h3>News Release</h3>
@@ -126,7 +133,7 @@
     <footer>
         <section class="logofooter">
             <picture>
-                <img src="images/logo_white_large.png" alt ="Tradition Chamber of Commercer logo">
+                <img src="images/logo_white_large.webp" alt ="Tradition Chamber of Commercer logo">
             </picture>
         </section>
         <section  class="location">
@@ -143,5 +150,6 @@
         </section>
     </footer>
     <script src="scripts/script.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>
