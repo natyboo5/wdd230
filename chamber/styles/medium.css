@@ -4,21 +4,19 @@
 		width: 100%;
 	}
 
-	.headings h1 {
+	.headings {
 		font-size: 2rem;
-		margin: 0;
+		margin-top: 23px;
 	}
 
-	.m {
-		letter-spacing: 1.5pt;
-		font-size: 0.9rem;
+	.social {
+		margin-top: 20px;
 	}
-
-	
 	/* Hamburger Button Styling */
 
 	nav ul.open {
-		display: flex;
+		display: block;
+		text-align: center; 
 	}
 
 	nav ul li a {
@@ -108,4 +106,10 @@
 		grid-column: 1/-1;
 		grid-row: 2;
 	}
+}
+
+/***** DISCOVER PAGE ****/
+
+.discover {
+	padding-bottom: 1rem;
 }

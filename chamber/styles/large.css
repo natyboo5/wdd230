@@ -11,6 +11,9 @@
         padding: 1.2rem 2rem;
     }
     
+    nav ul.open{
+        display: flex;
+    }
     nav button {display: none;}
     
     
@@ -22,6 +25,8 @@
     /*Main section styling*/
     main {
 		display: grid;
+        width: 100%;
+        justify-content: center;
         grid-template-columns: 23% 24% 24% 25%;
 	}
     .event {
