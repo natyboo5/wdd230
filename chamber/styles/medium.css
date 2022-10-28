@@ -113,3 +113,9 @@
 .discover {
 	padding-bottom: 1rem;
 }
+
+.discover img:hover {
+	box-shadow: 0 0 50px #333;
+	filter: saturate(50%);
+	border-radius: 15px 150px;
+}

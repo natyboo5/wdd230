@@ -303,8 +303,12 @@ section h3 {
 	margin: 0 auto;
 	padding: 0;
 }
-.discover img {
-	width: 50%;
+
+.discover img { 
+	width: 250px; 
+	height: auto; 
+	margin: .25rem;
+
 }
 .discover h3 {
 	padding-top: 1rem;
@@ -312,3 +316,4 @@ section h3 {
 .discover p {
 	padding: 0.5rem;
 }
+
