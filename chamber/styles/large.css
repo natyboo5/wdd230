@@ -63,7 +63,10 @@
 		grid-row: 1/4;
     }
 
-
+    /*----------- FORM --------------*/
+    form label.sbs {
+        padding: .4rem 0;
+    }
 
 
 }
