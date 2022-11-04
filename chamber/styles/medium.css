@@ -106,16 +106,28 @@
 		grid-column: 1/-1;
 		grid-row: 2;
 	}
-}
+
 
 /***** DISCOVER PAGE ****/
 
-.discover {
-	padding-bottom: 1rem;
-}
+	.discover {
+		padding-bottom: 1rem;
+	}
 
-.discover img:hover {
-	box-shadow: 0 0 50px #333;
-	filter: saturate(50%);
-	border-radius: 15px 150px;
+	.discover img:hover {
+		box-shadow: 0 0 50px #333;
+		filter: saturate(50%);
+		border-radius: 15px 150px;
+	}
+
+
+
+	/*------JOIN FORM -----*/
+	main.joinForm{
+		padding: 4rem;
+	}
+
+	main.joinForm h2{
+		font-size: 2em;
+	}
 }
