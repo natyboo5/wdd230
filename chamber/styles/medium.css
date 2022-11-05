@@ -122,12 +122,23 @@
 
 
 
+/******* JOIN PAGE ***************/
+
+/* ------- MEMBERSHIP TABLE ------------*/
+
+
+
+table {
+	display: none;
+ }
+
+
 	/*------JOIN FORM -----*/
 	main.joinForm{
 		padding: 4rem;
 	}
 
 	main.joinForm h2{
-		font-size: 2em;
+		font-size: em;
 	}
 }

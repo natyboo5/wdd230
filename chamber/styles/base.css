@@ -318,6 +318,55 @@ section h3 {
 }
 
 
+/******* JOIN PAGE ***************/
+
+/* ------- MEMBERSHIP TABLE ------------*/
+section.membershipInfo{
+	text-align: center;
+	align-items: center;
+	margin-left: 2px;
+	display: block;
+	width: 100%;
+}
+table {
+    margin: 2rem auto ;
+    border-collapse: collapse;
+    border: 2px solid rgb(200,200,200);
+    letter-spacing: 1px;
+	text-align: left;
+	
+  }
+
+  thead {
+	text-align: center;
+  }
+
+  td, th {
+    border: 1px solid rgb(190,190,190);
+    padding: 10px 20px;
+  }
+   
+  td {
+    text-align: center;
+  }
+  .title {
+    background-color: rgb(161, 168, 171);
+  }
+  tr:nth-child(even) td {
+    background-color: rgb(250,250,250);
+  }
+  
+  tr:nth-child(odd) td {
+    background-color: rgba(205, 228, 247, 0.737);
+  }
+
+
+    
+
+	table {
+		display: none;
+	}
+
 
 /*----------- FORM --------------*/
 form fieldset {
@@ -364,7 +413,7 @@ form label.sbs:hover {
 	background-color: white;
 }
 
-form input.submitBtn {
+form button.submitBtn {
     border: none;
     background-color: #42b3ab;
     color: white;

@@ -38,9 +38,27 @@ localStorage.setItem('date', day);
 const lastVisitDay = Date.parse(lastVisit);
 let numberOfDays = (day - lastVisitDay)/86400000;
 
+// if (!numberOfDays) {
+//     document.querySelector("#lastVisit").textContent = 0;
+// }
+// else {
+//     document.querySelector("#lastVisit").textContent = numberOfDays.toFixed(0);
+// }
+
+
 if (!numberOfDays) {
-    document.querySelector("#lastVisit").textContent = 0;
+    const numDaysN = document.querySelector("#lastVisit");
+    if (numDaysN) { numDaysN.textContent = 0; }
+    // document.querySelector("#lastVisit").textContent = 0
 }
 else {
-    document.querySelector("#lastVisit").textContent = numberOfDays.toFixed(0);
+    const numDaysY = document.querySelector("#lastVisit");
+    if (numDaysY) numDaysY.textContent = numberOfDays.toFixed(0);
+    // document.querySelector("#lastVisit").textContent = number_mSdayS.toFixed(0);
 }
+
+
+/*----- Hidden date and time for the join form ----- */
+
+const joinDateCurrent = document.querySelector(".joinDate");
+if (joinDateCurrent) { joinDateCurrent.textContent = day }

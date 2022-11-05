@@ -57,6 +57,101 @@
     <!-- CONTENT HERE -->
     <main class="joinForm">
         <h2>Join our Chamber of Commerce</h2>
+        <section class="membershipInfo">
+            <table>
+                <thead class="title">
+                    <th scope="col">MEMBERSHIP<br>BENEFITS</th>
+                    <th scope="col">Non Profit<br>No Fee</th>
+                    <th scope="col">Bronze <br>Membership<br>$50 Yearly</th>
+                    <th scope="col">Silver <br>Membership<br>$100 Yearly</th>
+                    <th scope="col">Gold <br>Membership<br>$200 Yearly</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Enhanced Business Profile</th>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Online Visibilty Report</th>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Chamber News Letter</th>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Exclusive Deals & Discounts</th>
+                        <td>❌</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Employee Benefits Program</th>
+                        <td>❌</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">List your Business on Chamber Deals</th>
+                        <td>❌</td>
+                        <td>❌</td>                        
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Press Release Credibility Booster</th>
+                        <td>❌</td>
+                        <td>❌</td>                        
+                        <td>❌</td>                        
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <th scope="rowgroup" span="5" class="title">STAND OUT AND GET FOUND</th>
+                    </tr>
+                    <tr>
+                        <th>Top Placement in Local Area</th>
+                        <td>❌</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <th>Dispute Negative reviews</th>
+                        <td>❌</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <th>Ads on Competitor Listing</th>
+                        <td>❌</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <th>Up to 15 Photos</th>
+                        <td>❌</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>    
+                </tbody>
+                <tfoot>
+                </tfoot>
+            </table>
+        </section>
         <form method="get" action="thanks.html">
           <fieldset>
               <legend>Applicant Information</legend>
@@ -73,14 +168,20 @@
               <label class="sbs"><input type="radio" name="membership" value="bronze">Bronze Membership (fee $50)</label>
               <label class="sbs"><input type="radio" name="membership" value="silver">Silver Membership (fee $100)</label>
               <label class="sbs"><input type="radio" name="membership" value="gold">Gold Membership (fee $200)</label>
-              <p class="info2">For more information about membership benefits, see the membership information page.</p>
+              <p class="info2">For more information about membership benefits, see the table above.</p>
           </fieldset>
           <fieldset>
               <legend>Business Description</legend>
+              <label class="top">
               <div>Briefly describe your business:</div>
-              <label class="top"><textarea name="description" rows="10" cols="38"></textarea></label>
+              <textarea name="description" rows="10" cols="37"></textarea></label>
           </fieldset>
-          <input type="submit" value="Join Now" class="submitBtn">
+
+          <div>
+            <p hidden>Current Date and time: <span class="joinDate"></span></p>
+          </div>
+
+            <button type="submit" class="submitBtn">Join Now</button>
         </form>
             
           
@@ -106,6 +207,6 @@
         </section>
     </footer>
     <script src="scripts/script.js"></script>
-    <script src="scripts/windchill.js"></script>
+
 </body>
 </html>

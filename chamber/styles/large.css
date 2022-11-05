@@ -63,6 +63,16 @@
 		grid-row: 1/4;
     }
 
+    
+    /******* JOIN PAGE ***************/
+
+/* ------- MEMBERSHIP TABLE ------------*/
+    
+table {
+    display:contents;
+}
+
+  
     /*----------- FORM --------------*/
     form label.sbs {
         padding: .4rem 0;
