@@ -1,82 +1,69 @@
-
-
 body {
-    background: #357b9c;
-  }
-  
-  main {
-    margin: auto 0px;
-    text-align: center;
-    margin: 1rem;
-  }
-  
-  div {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 1rem;
-  }
-  
-  section {
-    padding: 0 1rem;
-    border-radius: 15px;
-    background: white;
-  }
-  
-  h1 {
-    color: white;
-    padding: 1rem;
-    text-align: center;
-    font-size: 2rem;
-  }
-  
-  h2 {
-    color: #08415C;
-  }
-  
-  img {
-    max-height: 320px;
-    margin-bottom: 1.5rem;
-  }
-  
-  li {
-    display: block;
-    text-align: center;
-    padding: 0.75rem;
-    text-decoration: none;
-    color: #08415C;
-  }
-
-  footer {
-    text-align: center;
-    color: white;
-     border-top: 1px solid #555;
-    padding: 1rem;
-  }
-
-
-  /*35rem is also 560px when basefont is 16px*/
-@media only screen and (min-width: 35em) {
-
-    p {
-        font-size: 1.5rem;
-    }
-    div {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(320px, 1fr));
-    }
-    img {
-        max-height: none;
-    }
-
-    footer {
-        font-size: 1.5rem;
-    }
-} 
-
-/*64rem is also 1024px when basefont is 16px*/
-@media only screen and (min-width: 64em) {
-    .cards {
-        display: grid;
-        grid-template-columns: repeat(4, minmax(320px, 1fr));
-    }
+  background: #357b9c;
+  font-size: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+  
+header,
+main,
+footer {
+  margin: 1rem;
+  position: relative;
+}
+  
+
+h1 {
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+  
+h2 {
+  color: #08415C;
+}
+
+p {
+  margin: 0;
+}
+
+  
+main {
+  margin-left: 2rem;
+  text-align: center;
+  
+}
+
+ 
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+  
+section {
+  margin: 0.25rem;
+  padding: 0.35rem;
+  border-radius: 15px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  
+  
+img {
+  width: auto;
+  max-width: 325px;
+  height: 200px;
+  margin: 1rem 0;
+  box-shadow: 0 0 30px #777;
+  
+}
+
+footer {
+  text-align: center;
+  color: white;
+  border-top: 1px solid white;
+  padding: 2rem;
+}
+
+

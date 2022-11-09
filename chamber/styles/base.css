@@ -453,3 +453,34 @@ form textarea {
 	padding: 10px;
 }
 
+
+
+
+
+
+/*35rem is also 560px when basefont is 16px*/
+@media only screen and (min-width: 35em) {
+
+	/* p {
+	  font-size: 1rem;
+	} */
+	div {
+	  display: grid;
+	  grid-template-columns: repeat(2, minmax(320px, 1fr));
+	}
+	img {
+	  max-height: none;
+	}
+  
+	footer {
+	  font-size: 1.5rem;
+	}
+  } 
+  
+  /*64rem is also 1024px when basefont is 16px*/
+  @media only screen and (min-width: 64em) {
+	.cards {
+	  display: grid;
+	  grid-template-columns: repeat(4, minmax(320px, 1fr));
+	}
+  }
