@@ -25,12 +25,12 @@
 
 		
 	/*Main section styling*/
-	main {
+	main.content {
 		display: grid;
 		grid-template-columns: 25% 25% 25% 25%;
 		grid-gap: .8rem;
 	}
-	main section{
+	main.content section{
 		margin-bottom: 0;
 	}
 	
@@ -128,9 +128,9 @@
 
 
 
-table {
-	display: none;
- }
+	table {
+		display: none;
+	}
 
 
 	/*------JOIN FORM -----*/
@@ -141,4 +141,23 @@ table {
 	main.joinForm h2{
 		font-size: em;
 	}
+
+
+/******* DIRECTORY PAGE ********/
+
+/*-------- GRID --------*/
+
+/* .list section img {
+	display: block;
+} */
+
+.list section img {
+	display: none; 
+}	
+
+.list section {
+	text-align: left;
+	font-size: 1.5rem;
+	flex-direction: row;
+}
 }

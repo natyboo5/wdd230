@@ -1,0 +1,84 @@
+{
+	"companies": [{ 
+        "name": "All County Funeral Home ",
+		"address":"1107 Lake Ave, PSL, FL 33460",
+		"phoneNumber":"561.459.9604",
+		"email":"info@allcountyfuneral.com",
+		"URL":"https://www.allcounty.com/",
+		"image":"json/imagesJSON/all_county_logo.jpg",
+		"membershipLevel": 1
+		},
+	  {
+        "name":"AmTrust Bank",
+		"address":"874 St. Lucie W Blvd, PSL, FL 34986",
+		"phoneNumber":"772.344.0142",
+		"email":"info@mynycb.com",
+		"URL":"https://www.mynycb.com/",
+		"image":"json/imagesJSON/AmTrust_Bank.png",
+		"membershipLevel": 1
+		},
+	  {
+        "name":"Aqualink Marine Electronics",
+		"address":"6033 NW Winfield Dr, PSL, FL 34986",
+		"phoneNumber":"772.284.3394",
+		"email":"info@aqualinkmarine.com",
+		"URL":"https://aqualinkmarine.com/",
+		"image":"json/imagesJSON/AquaLink_Marine.webp",
+		"membershipLevel": 1
+		},
+	  {
+        "name":"Clean Eatz Cafe",
+		"address":"10836 SW Village Pkwy, PSL, FL 34987",
+		"phoneNumber":"704.677.8784",
+		"email":"infopsl@cleaneatz.com",
+		"URL":"https://locations.cleaneatz.com/",
+		"image":"json/imagesJSON/cleaneatz_logo.png",
+		"membershipLevel": 1
+		},
+	  {
+        "name":"European Wax Center",
+		"address":"10632 SW Village Pkwy, PSL, FL 34987",
+		"phoneNumber":"727.455.9570",
+		"email":"info@waxcenter.com",
+		"URL":"https://locations.waxcenter.com/",
+		"image":"json/imagesJSON/EWC_logo.webp",
+		"membershipLevel": 1
+		},
+	  {
+        "name":"Holiday Inn Express & Suites",
+		"address":"1601 NW Courtyard Circle, PSL, FL 34986",
+		"phoneNumber":"772.879.6565",
+		"email":"HIEPortStLucie@napleshotelgroup.com",
+		"URL":"https://www.ihg.com/",
+		"image":"json/imagesJSON/holiday_inn_express_logo.png",
+		"membershipLevel": 1
+		},
+	  {
+        "name":"Nationwide Tax Multiservices",
+		"address":"550 NW University Blvd, PSL, FL 34986",
+		"phoneNumber":"772.249.0562",
+		"email":"info@nationwidetaxmultiservices.com",
+		"URL":"www.nationwidetaxmultiservices.com/",
+		"image":"json/imagesJSON/nationwide_tax_multiservices_logo.png",
+		"membershipLevel": 1
+		},
+	  {
+        "name":"Ambrosia Treatment Center",
+		"address":"546 NW University Blvd, PSL, FL 34986",
+		"phoneNumber":"772.634.0581",
+		"email":"info@ambrosiatc.com",
+		"URL":"https://www.ambrosiatc.com/",
+		"image":"json/imagesJSON/ambrosia_treatment_center_logo.png",
+		"membershipLevel": 1
+		},
+	  {
+        "name":"Pride Air Conditioning",
+		"address":"534 NW Mercantile Pl, PSL, FL 34986",
+		"phoneNumber":"(772) 577-1228",
+		"email":"info@nationwidetaxmultiservices.com",
+		"URL":"https://pridekeepsyoucool.com/",
+		"image":"json/imagesJSON/pride_logo.jpg",
+		"membershipLevel": 1
+		}
+]
+}

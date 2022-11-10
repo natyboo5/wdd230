@@ -360,12 +360,9 @@ table {
     background-color: rgba(205, 228, 247, 0.737);
   }
 
-
-    
-
-	table {
-		display: none;
-	}
+  table {
+	display: none;
+  }
 
 
 /*----------- FORM --------------*/
@@ -454,33 +451,115 @@ form textarea {
 }
 
 
+/******* DIRECTORY PAGE ********/
+/*--- Buttons Styling ---*/
+.menu {
+	text-align: center;
+}
+.menu button {
+	padding: 1rem;
+	border: 2.5px solid rgb(41, 97, 194);
+}
 
+#grid img, #list img{
+	width: 20px;
+	height: 20px;
+    
+}
 
+/*-------- GRID AND LIST STYLING--------*/
 
+.dir1 {
+	margin: 1rem;
+	position: relative;
+	background-color:rgba(231, 230, 230, 0.5);
+}
 
-/*35rem is also 560px when basefont is 16px*/
-@media only screen and (min-width: 35em) {
+.directory {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	align-items: center;
+	line-height: 1.5rem;
+}
 
-	/* p {
-	  font-size: 1rem;
-	} */
-	div {
-	  display: grid;
-	  grid-template-columns: repeat(2, minmax(320px, 1fr));
-	}
-	img {
-	  max-height: none;
-	}
-  
-	footer {
-	  font-size: 1.5rem;
-	}
-  } 
-  
-  /*64rem is also 1024px when basefont is 16px*/
-  @media only screen and (min-width: 64em) {
-	.cards {
-	  display: grid;
-	  grid-template-columns: repeat(4, minmax(320px, 1fr));
-	}
-  }
+.directory section {
+	margin: 1rem;
+	padding: 0.35rem;
+	border-radius: 15px;
+	background-color:white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+	
+	
+.directory img {
+	width: auto;
+	max-width: 90%;
+	height: 100px;
+	margin: 1rem 0;
+	box-shadow: 0 0 30px #777;
+}
+   
+.directory  p{
+	line-height: 1rem;
+	font-size: .85rem;
+} 
+  /* buttons*/
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	align-items: center;
+	
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+
+}
+
+.list section {
+	display: flex;	
+	align-items: center;
+}
+
+.grid section {
+	flex-direction: column;
+	text-align: center;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+.list section {
+	flex-direction: column;
+	justify-content: left;
+}
+
+.list section > * {
+	margin: 0 1rem;
+	/* text-align: left; */
+	flex-flow: row;
+}
+
+.list section img {
+	display: none; 
+}
+
+.grid section h3 {
+	display: none; 
+}
+
+.list section h3 {
+	font-size: .85rem;
+
+}
+.list section p {
+	font-size: .85rem;
+}
+.list section:nth-child(odd) {
+	background-color: #d9f6f4;
+}

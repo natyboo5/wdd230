@@ -52,7 +52,7 @@ section {
   
 img {
   width: auto;
-  max-width: 325px;
+  max-width: px;
   height: 200px;
   margin: 1rem 0;
   box-shadow: 0 0 30px #777;
