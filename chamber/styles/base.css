@@ -491,7 +491,10 @@ form textarea {
 	flex-direction: column;
 	align-items: center;
 }
-	
+
+.directory h3 {
+	display: none;
+}
 	
 .directory img {
 	width: auto;
