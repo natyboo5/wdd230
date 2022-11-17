@@ -75,7 +75,6 @@ const displayDirectory = (dataDirectory) => {
         let address = document.createElement('p');
         let phoneNumber = document.createElement('p');
         let URL = document.createElement('a');
-        let email = document.createElement('p');
         
         name.textContent = `${company.name}`;
 
@@ -90,18 +89,12 @@ const displayDirectory = (dataDirectory) => {
         URL.appendChild(linkWebsite);
         URL.href = company.URL;
         URL.target = '_blank';
-
-        // URL.setAttribute('href', company.URL);
-
-
-        email.textContent = `${company.email}`;
         
         card.appendChild(name);
         card.appendChild(logo);
         card.appendChild(address);
         card.appendChild(phoneNumber);
         card.appendChild(URL);
-        card.appendChild(email);
         document.querySelector('article.directory').appendChild(card);
       }
     )

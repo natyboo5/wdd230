@@ -152,8 +152,13 @@
 }	
 
 .list section {
-
 	width: 90%;
 	flex-direction: row;
+}
+
+.list section{
+	display: grid;
+	grid-template-columns: repeat(3,21%) 34%;
+
 }
 }
