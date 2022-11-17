@@ -147,17 +147,13 @@
 
 /*-------- GRID --------*/
 
-/* .list section img {
-	display: block;
-} */
-
 .list section img {
 	display: none; 
 }	
 
 .list section {
-	text-align: left;
-	font-size: 1.5rem;
+
+	width: 90%;
 	flex-direction: row;
 }
 }

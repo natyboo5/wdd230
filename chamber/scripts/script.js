@@ -70,11 +70,11 @@ const displayDirectory = (dataDirectory) => {
     dataDirectory.companies.forEach (
         company => {
         let card = document.createElement('section');
-        let name = document.createElement('h3')
+        let name = document.createElement('h3');
         let logo = document.createElement('img');
         let address = document.createElement('p');
         let phoneNumber = document.createElement('p');
-        let URL = document.createElement('p');
+        let URL = document.createElement('a');
         let email = document.createElement('p');
         
         name.textContent = `${company.name}`;
@@ -85,7 +85,15 @@ const displayDirectory = (dataDirectory) => {
        
         address.textContent = `${company.address}`;
         phoneNumber.textContent = `${company.phoneNumber}`;
-        URL.textContent = `${company.URL}`;
+        // URL.textContent = `${company.URL}`;
+        let linkWebsite = document.createTextNode(company.URL);
+        URL.appendChild(linkWebsite);
+        URL.href = company.URL;
+        URL.target = '_blank';
+
+        // URL.setAttribute('href', company.URL);
+
+
         email.textContent = `${company.email}`;
         
         card.appendChild(name);
@@ -114,12 +122,14 @@ async function getDirectory() {
   }
 
 /*------------Button Listeners ----------------*/
+
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("article");
 
+if (gridbutton || listbutton) {
+
 gridbutton.addEventListener("click", () => {
-	// example using arrow function
 	display.classList.add("grid");
 	display.classList.remove("list");
 });
@@ -128,3 +138,4 @@ listbutton.addEventListener("click", () => {
 	display.classList.add("list");
 	display.classList.remove("grid");
 });
+}

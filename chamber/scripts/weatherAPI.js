@@ -3,7 +3,7 @@
 // const weatherIcon = document.querySelector('#weather-icon');
 // const captionDesc = document.querySelector('figcaption');
 // const wind = document.querySelector('.wind')
-const url = 'https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&units=imperial&appid=e873668f0886def8ce1ef00578214266'
+const url = 'https://api.openweathermap.org/data/2.5/weather?q=Stuart&units=imperial&appid=e873668f0886def8ce1ef00578214266'
 const weather = document.querySelector('.weatherInfo')
 
 
@@ -31,12 +31,13 @@ apiFetch();
 
     let card = document.createElement('section');
     let currentTemp = document.createElement('p');
-    let weatherIcon = document.createElement('img')
+    let weatherIcon = document.createElement('img');
     let captionDesc = document.createElement('figcaption');
-    let wind = document.createElement('p')
+    let windSpeed = document.createElement('p');
+    let wind = document.createElement('p');
  
     const tF = weatherData.main.temp.toFixed(0);
-    currentTemp.innerHTML = `The current temperature in Fairbank, Alaska is <strong>${tF}F</strong>`;
+    currentTemp.innerHTML = `Current temperature is <strong>${tF}F</strong>`;
   
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;
@@ -55,10 +56,12 @@ apiFetch();
         wind.textContent = `Wind Chill: N/A`;
     }
 
+    windSpeed.innerHTML = `Speed: ${smH}`;
     // Add/append the section(card) with the h2 element
     card.appendChild(currentTemp);
     card.appendChild(weatherIcon);
     card.appendChild(captionDesc);
+    card.appendChild(windSpeed);
     card.appendChild(wind);
 
     // Add/append the existing HTML div with the cards class with the section(card)

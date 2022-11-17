@@ -74,19 +74,8 @@
         </section>
         <section class="weather">
             <h3>Weather</h3>
-                <div class="weatherTop">
-                  <picture>
-                      <img src="images/weather_sun_cloud.png" alt="picture of sun and cloud">
-                  </picture>
-                  <p><span class="degrees"></span>°</p>
-                </div>
-                <div class="weatherCenter">
-                  <p>Partly Cloudy</p>
-                </div>
-                <div class="weatherBottom">  
-                  <p>Speed: <span class="speed"></span></p>
-                  <p>Wind Chill: <span class="wind"></span></p>
-                </div>
+            <div class="weatherInfo"><strong>Current Condition</strong></div>
+            <p class="weatherSource">Source: <a href="https://openweathermap.org/api">Open Weather</a></p>
         </section>
         <section class="news">
             <h3>News Release</h3>
@@ -148,6 +137,6 @@
         </section>
     </footer>
     <script src="scripts/script.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weatherAPI.js"></script>
 </body>
 </html>
