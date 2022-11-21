@@ -147,6 +147,7 @@ main section {
 	text-align: center;
 	/* border: 1px solid black; */
 	margin-bottom: 1rem;
+	padding-bottom: 1rem;
 }
 
 main section div {
@@ -228,12 +229,13 @@ section h3 {
 	color: white;
 }
 
-.joinChamber {
+.joinChamber a{
 	padding: 1rem;
 	margin-right: 2rem;
 	margin-left: 2rem;
 	letter-spacing: 2px;
 	font-weight: bold;
+	text-decoration: none; 
 }
 
 /*Event */
@@ -245,8 +247,7 @@ section h3 {
 /*Join Us */
 
 .joinUs {
-	display: none
-
+	display: none;	
 } 
 
 /* Spotlight 1 */
@@ -275,6 +276,9 @@ section h3 {
 	font-weight: bold;
 }
 
+.weatherInfo img{
+	width: 50%;
+}
 .weatherSource{
 	font-size: .75rem;
 }
