@@ -38,13 +38,6 @@ localStorage.setItem('date', day);
 const lastVisitDay = Date.parse(lastVisit);
 let numberOfDays = (day - lastVisitDay)/86400000;
 
-// if (!numberOfDays) {
-//     document.querySelector("#lastVisit").textContent = 0;
-// }
-// else {
-//     document.querySelector("#lastVisit").textContent = numberOfDays.toFixed(0);
-// }
-
 
 if (!numberOfDays) {
     const numDaysN = document.querySelector("#lastVisit");

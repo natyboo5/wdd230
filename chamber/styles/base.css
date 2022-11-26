@@ -502,8 +502,7 @@ form textarea {
 .list {
 	display: flex;
 	flex-direction: column;
-	align-items: left;
-
+	align-items: center;
 }
 
 .list section {
@@ -538,8 +537,8 @@ form textarea {
 	display: none; 
 }
 
-.grid section a {
-	font-size: rem;
+.grid section a{
+	font-size: .9rem;
 }
 .list section h3 {
 	font-size: .85rem;
@@ -553,6 +552,9 @@ form textarea {
 	background-color: #d9f6f4;
 }
 
+.list section a{
+	font-size: .9rem;
+}
 /*---CONTACT PAGE ----*/
 
 .pageTitle {
