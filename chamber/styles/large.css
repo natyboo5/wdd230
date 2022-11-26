@@ -10,20 +10,20 @@
     nav ul li a {
         padding: 1.2rem 2rem;
     }
-    
+
     nav ul.open{
         display: flex;
     }
     nav button {display: none;}
-    
-    
+
+
 
     /* .social {
         move the social media icons to the right
     } */
 
     /*Main section styling*/
-    .content main {
+    .content {
 		display: grid;
         width: 100%;
         justify-content: center;
@@ -40,7 +40,11 @@
 
     .joinUs{
         grid-column: 1/2;
-        grid-row: 3/4; 
+        grid-row: 3/4;
+    }
+
+    .joinUsBtn {
+        width: 80%;
     }
 
     .hero {
@@ -52,7 +56,9 @@
         grid-column: 2/4;
         grid-row: 3/4;
     }
-
+	.spotlight1 {
+		width: 100%;
+	}
     .spotlight3 {
         display: grid;
     }
@@ -63,16 +69,16 @@
 		grid-row: 1/4;
     }
 
-    
+
     /******* JOIN PAGE ***************/
 
 /* ------- MEMBERSHIP TABLE ------------*/
-    
+
 table {
     display:contents;
 }
 
-  
+
 /*----------- FORM --------------*/
 form label.sbs {
     padding: .4rem 0;
@@ -81,10 +87,7 @@ form label.sbs {
 /******* DIRECTORY PAGE ********/
 
 /*-------- GRID --------*/
-
-
-
     .list section img {
-        display: none; 
-    } 
+        display: none;
+    }
 }

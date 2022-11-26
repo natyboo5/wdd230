@@ -37,7 +37,7 @@ apiFetch();
     let wind = document.createElement('p');
  
     const tF = weatherData.main.temp.toFixed(0);
-    currentTemp.innerHTML = `Current temperature is <strong>${tF}F</strong>`;
+    currentTemp.innerHTML = `Current temperature is <strong>${tF}°F</strong>`;
   
     const iconsrc = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`;
     const desc = weatherData.weather[0].description;

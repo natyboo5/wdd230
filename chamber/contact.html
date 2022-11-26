@@ -56,9 +56,42 @@
 
     <!-- CONTENT HERE -->
     <main class="joinForm">
-        <h2>Thank you for your application.</h2>
-        <p>Thank you for applying to become a member of the Tradition Chamber of Commerce. Please allow 2 to 3 business days for processing. You will receive an email confirmation once your application has been finished.</p>
- 
+        <h2 class="pageTitle">CONTACT US</h2>
+        <section class="contactUs">
+            <div class="contactInfo">
+            <h3>Tradition Chamber of Commerce</h3>
+            <p>10807 SW Tradition Square<br/>Port St. Lucie, FL 34987</p><p>(772) 207-0057</p>
+            
+            <br />
+            <h3>Board of Directors</h3>
+            <p>Jake Mangas<br />President &amp; CEO<br/>(772) 207-0057, ext. 104</p><br />
+            <p>Erin Hull<br />Vice President of Marketing and Communications<br />(772) 207-0057, ext. 102</p><br />
+            <p>Haley Soule Kennedy<br />Membership Director<br />(772) 207-0057, ext. 101</p><br />
+            <p>Justine Lehman<br />Bookkeeper/Grant Project Manager<br />(772) 207-0057, ext. 105</p><br />
+            <p>Mandi Kernaghan<br />Operations Assistant<br />(772) 207-0057, ext. 100</p><br />
+            </div>
+        
+            <form method="get" action="thanks.html">
+                <fieldset class="inquiry">
+                    <legend><strong>Get in touch</strong></legend>
+                    <label class="top">First Name* <input type="text" name="fname" required></label>
+                    <label class="top">Last Name* <input type="text" name="lname" required></label>
+                    <label class="top">Business position title <input type="text" name="businessTitle" title="(at least 7 characters)" pattern="[-A-Za-z0-9\s]{7,}"><span class="info2">Accepts only alpha characters, hyphens, and spaces with a minimum of 7 characters</span></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                    <label class="top">Cell Phone* <input type="text" name="phone" placeholder="1235551234" required></label>
+                    <label class="top">Business Name <input type="text" name="businessName"></label>
+                    <label class="top">
+                    <div>Briefly describe your inquiry:</div>
+                    <textarea name="description" rows="10" cols="38"></textarea></label>
+                    </fieldset>  
+
+                <button type="submit" class="submitBtn">Send your inquiry</button>
+            </form>
+        </section>
+        <div>
+            <iframe width="1000" height="375" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=1000&amp;height=375&amp;hl=en&amp;q=%20Port%20Saint%20Lucie+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" title="map of Port Saint Lucie"></iframe>
+        </div>
+          
 
     </main>
     <footer>
@@ -81,6 +114,6 @@
         </section>
     </footer>
     <script src="scripts/script.js"></script>
-    <script src="scripts/windchill.js"></script>
+
 </body>
 </html>

@@ -15,7 +15,7 @@
 		"email":"info@mynycb.com",
 		"URL":"https://www.mynycb.com/",
 		"image":"json/imagesJSON/AmTrust_Bank.png",
-		"membershipLevel": 1
+		"membershipLevel": 2
 		},
 	  {
         "name":"Aqualink Marine Electronics",
@@ -33,7 +33,7 @@
 		"email":"infopsl@cleaneatz.com",
 		"URL":"https://locations.cleaneatz.com/",
 		"image":"json/imagesJSON/cleaneatz_logo.png",
-		"membershipLevel": 1
+		"membershipLevel": 2
 		},
 	  {
         "name":"European Wax Center",
@@ -51,7 +51,7 @@
 		"email":"HIEPortStLucie@napleshotelgroup.com",
 		"URL":"https://www.ihg.com/",
 		"image":"json/imagesJSON/holiday_inn_express_logo.png",
-		"membershipLevel": 1
+		"membershipLevel": 2
 		},
 	  {
         "name":"Nationwide Tax Multiservices",
@@ -60,7 +60,7 @@
 		"email":"info@nationwidetaxmultiservices.com",
 		"URL":"www.nationwidetaxmultiservices.com/",
 		"image":"json/imagesJSON/nationwide_tax_multiservices_logo.png",
-		"membershipLevel": 1
+		"membershipLevel": 3
 		},
 	  {
         "name":"Ambrosia Treatment Center",
@@ -69,7 +69,7 @@
 		"email":"info@ambrosiatc.com",
 		"URL":"https://www.ambrosiatc.com/",
 		"image":"json/imagesJSON/ambrosia_treatment_center_logo.png",
-		"membershipLevel": 1
+		"membershipLevel": 3
 		},
 	  {
         "name":"Pride Air Conditioning",
