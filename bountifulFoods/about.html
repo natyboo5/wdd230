@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful Foods Home Page</title>
+    <meta name="description" content="Bountiful Foods serving coastal area from LA to San Diego">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <section class="headertop">
+            <div class="logo">
+                <picture>
+                    <img src="images/logo-Bountiful-Foods.svg" alt="Logo of Bountiful Foods" loading="lazy">
+                </picture>
+                <section class="headings">
+                    <h1>Bountiful Foods</h1>
+                    <p>2647 Gateway Rd, Carlsbad, CA 92009</p>
+                    <p>☎️ (760) 331-2955</p>
+                </section>
+            </div>
+
+
+            <nav>
+                <button id="hamButton"><span>&#9776;</span></button>
+                <ul id="primaryNav">
+                    <li class="medpage"><a href="home.html">Home</a></li>
+                    <li class="medpage"><a href="fresh.html">Fresh</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <h2 class="pageTitle">ABOUT US</h2>
+        <section class="about">
+            <div class="aboutBF">
+                <h2>We love what we do</h2>
+                <p>Bountiful Foods is proud of every product we offer because we strive to reach the best quality
+                    possible for
+                    each one of them.</p>
+                <p>Every process is controlled periodically and adjusted to keep our quality levels at all times.</p>
+
+                <h2>We love nature</h2>
+                <p>At Bountiful Foods, we value and appreciate the nature and since 1995, we have been working hard to
+                    reduce
+                    our enviromental impact.</p>
+                <picture><img src="images/photo5.webp" alt="photo of a little plant held by two hands" loading="lazy"></picture>
+
+                <h2 class="">The Village by the Sea</h2>
+                <p>The north half of the Carlsbad coast is composed of a series of small beaches divided by sea walls,
+                    while
+                    South Carlsbad State Beach is where you'll find happy campers, riding bikes around the campground
+                    and body
+                    boarding on the often uncrowded beach below.</p>
+                <p>The cliffs here are relatively low and in most places the historic Coast Highway 101 passes right
+                    next to the
+                    shore, offering an unobstructed view of the sea and open access to the beach. Well-designed
+                    walkways,
+                    attractive sea walls and a host of facilities make the beaches in Carlsbad as pleasing to the eye as
+                    they
+                    are accommodating to visitors.</p>
+                <picture><img src="images/photo6.webp" alt="photo of Carlsbad Beach, California" loading="lazy"></picture>
+            </div>
+
+            <form method="get" action="thanks.html">
+                <fieldset class="inquiry">
+                    <legend><strong>Get in touch</strong></legend>
+                    <label class="client">First Name* <input type="text" name="fname" required></label>
+                    <label class="client">Last Name* <input type="text" name="lname" required></label>
+                    <label class="client">Business position title <input type="text" name="businessTitle"
+                            title="(at least 7 characters)" pattern="[-A-Za-z0-9\s]{7,}"><span class="info2"><br />Accepts
+                            only alpha characters, hyphens, and spaces with a minimum of 7 characters</span></label>
+                    <label class="client">Email* <input type="email" name="email" placeholder="someone@gmail.com"
+                            required></label>
+                    <label class="client">Cell Phone* <input type="text" name="phone" placeholder="1235551234"
+                            required></label>
+                    <label class="client">Business Name <input type="text" name="businessName"></label>
+                    <label class="client">Briefly describe your inquiry:
+                        <textarea name="description" rows="10" cols="38"></textarea></label>
+                </fieldset>
+
+                <button type="submit" class="submitBtn">Send your inquiry</button>
+            </form>
+        </section>
+        <div>
+            <iframe width="1100" height="500" src="https://maps.google.com/maps?width=1100&amp;height=500&amp;hl=en&amp;q=%20Carlsbad+(Carlsbad%20Beach%20)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+ 
+        </div>
+
+
+    </main>
+
+    <footer>
+        <nav>
+            <!-- <button id="hamButton"><span>&#9776;</span></button> -->
+            <ul id="">
+                <li><a href="home.html">Home</a></li>
+
+                <li><a href="fresh.html">Fresh</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="attributions.html">Attributions</a></li>
+            </ul>
+        </nav>
+        <section class="bottomInfo">
+            <div>
+                <p>Bountiful Foods<br />
+                    2647 Gateway Rd, Carlsbad, CA 92009<br />
+                    &copy;<span id="year"></span> Bountiful Foods. All rights reserved.</p>
+            </div>
+            <div>
+                <p>☎️ (760) 331-2955</p>
+            </div>
+            <div>
+                <p>Last Modify: <span id="lastupdated"></span></p>
+            </div>
+        </section>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

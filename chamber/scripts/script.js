@@ -144,7 +144,6 @@ function shuffleCompanies(companies) {
 }
 function displaySpotlight(company,numberSpotlight) {
     let card = document.createElement('section');
-    let indexS = document.createElement('h2');
     let name = document.createElement('h3');
     let logo = document.createElement('img');
     let address = document.createElement('p');
@@ -160,7 +159,6 @@ function displaySpotlight(company,numberSpotlight) {
     logo.setAttribute('loading', 'lazy');
     address.textContent = company.address;
     phoneNumber.textContent = company.phoneNumber;
-    card.appendChild(indexS);
     card.appendChild(name);
     card.appendChild(logo);
     card.appendChild(address);
@@ -194,3 +192,5 @@ async function getDirectory() {
   if (dir || spotL) {
     getDirectory();
   }
+
+

@@ -212,3 +212,13 @@
 
 </body>
 </html>
+
+let quantity = document.querySelector("#id").value;
+
+document.querySelector("p").InnerHTML = "Welcome to <em>our</em> neighborhood!";
+
+document.querySelector("#temp").value = getTemperature();
+
+const divs = document.querySelectorAll("div");
+
+let filterC = citynames.filter(city => city.charAt(0) === 'C');

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful Foods Home Page</title>
+    <meta name="description" content="Bountiful Foods serving coastal area from LA to San Diego">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <section class="headertop">
+            <div class="logo">
+                <picture>
+                    <img src="images/logo-Bountiful-Foods.svg" alt="Logo of Bountiful Foods" loading="lazy">
+                </picture>
+                <section class="headings">
+                    <h1>Bountiful Foods</h1>
+                    <p>2647 Gateway Rd, Carlsbad, CA 92009</p>
+                    <p>☎️ (760) 331-2955</p>
+                </section>
+            </div>
+
+
+            <nav>
+                <button id="hamButton"><span>&#9776;</span></button>
+                <ul id="primaryNav">
+                    <li class="medpage"><a href="home.html">Home</a></li>
+                    <li class="medpage"><a href="fresh.html">Fresh</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main class="mainContent">
+        <section class="welcome">
+            <picture><img src="images/photo1.webp" alt="photo of local oranges" loading="lazy"></picture>
+            <h2>Welcome to<br />Bountiful Foods</h2>
+            <p>Our mission is to provide fresh and healthy food options, including organic, made to order, fruit drinks
+                and fruit bags, to the local population and to tourists visiting the coastal areas.</p>
+            <div class="button1">
+                <a class="click1" href="about.html">LEARN MORE</a>
+                <a class="click1" href="fresh.html">ORDER FOOD</a>
+            </div>
+        </section>
+        <p class="yourCart"><em>Your cart:</em><span id="numberSpecialtyDrinks"></span> drinks ordered.</p>
+
+        <section class="message1">
+            <picture><img src="images/photo2.webp" alt="photo of kiwis and blueberries" loading="lazy"></picture>
+            <div>
+                <h2>Locally grown <br />Locally loved</h2>
+                <p>We are physically located in Carlsbad, California, however, we have many food trucks that cover the
+                    coastal area from Los Angeles to San Diego.</p>
+                <p>We sell fruits and produce directly from the farmers in the area, bringing food and people together.
+                </p>
+
+        </section>
+
+        <section class="message1">
+            <div>
+                <h2>We love the west coast area: Carlsbad Beach</h2>
+                <p>With its sprawling shoreline, Carlsbad is home to eight beaches. The state owns South Carlsbad
+                    beaches,
+                    and North Carlsbad beaches are owned by coastal property owners with the City of Carlsbad providing
+                    public access.</p>
+                <p>Stretching from La Costa Avenue to the Carlsbad/Oceanside border, these beaches offer visitors a
+                    wealth
+                    of activities including surfing, hiking, biking, diving, beachcombing, and wildlife viewing.</p>
+            </div>
+            <picture><img src="images/photo3.webp" alt="photo of Carlsbad Beach" loading="lazy"></picture>
+        </section>
+
+        <section class="smoothies">
+            <h2>Enjoy our signature mixes</h2>
+            <div class="smoothiesPics">
+                <div>
+                    <picture class="smoothie"><img src="images/smoothie1.webp" alt="photo of Pink Flamingo smoothie" loading="lazy">
+                    </picture>
+                    <h4>Pink Flamingo</h4>
+                    <p>Dragon fruit, strawberry, pineapple,coconut water, and agave.</p>
+                    <p>200 | 450 Cal</p>
+                </div>
+                <div>
+                    <picture class="smoothie"><img src="images/smoothie2.webp" alt="photo of Pink Flamingo smoothie" loading="lazy">
+                    </picture>
+                    <h4>Popeye's Acai</h4>
+                    <p>Açaí, banana, blueberry, spinach, housemade cashew milk and agave.</p>
+                    <p>320 | 450 Cal</p>
+                </div>
+                <div>
+                    <picture class="smoothie"><img src="images/smoothie3.webp" alt="photo of Tropical Cooler smoothie" loading="lazy">
+                    </picture>
+                    <h4>Tropical Cooler</h4>
+                    <p>Spinach, kale, pineapple, banana, coconut flakes, and coconut water.</p>
+                    <p>220 | 320 Cal</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="masterpiece">
+            <h2 class="message1">Or create your own masterpierce</h2>
+            <div><a class="masterButton" href="fresh.html">CREATE YOUR MIX</a></div>
+            <p>Visit the Fresh page and let your imagination flow creating your own fruit drink mix</p>
+        </section>
+
+
+        <section class=" weather">
+            <h2 class="weatherTitle">Carlsbad Weather Report</h2>
+
+
+            <section class="weatherSection">
+                <div class="todayWeather">
+                    <h4 class="weatherTitle">Today's Weather</h4>
+                    <p>Temp: <span id="currentTemp"></span>°F</p>
+                    <p>Condition: <span id="condition"></span></p>
+                    <p>Humidity: <span id="humidity"></span>%</p>
+                </div>
+
+                <div class="weatherSummary">
+                    <h4 class="forecastTitle weatherTitle">Weather Next 3 Days</h4>
+                    <div>
+                        <p><span id="day1"></span></p>
+                        <p>Temp: <span id="forecastDay1"></span>°F</p>
+                    </div>
+
+                    <div>
+                        <p><span id="day2"></span></p>
+                        <p>Temp: <span id="forecastDay2"></span>°F</p>
+                    </div>
+
+                    <div>
+                        <p><span id="day3"></span></p>
+                        <p>Temp: <span id="forecastDay3"></span>°F</p>
+                    </div>
+                
+                </div>
+            </section>
+        </section>
+
+        <section class="social">
+            <div class="socialText">
+                <h2>Get In Touch</h2>
+                <p>Connect with us through our social media channels
+                    <br />Tag us next time in your story and we will repost it
+                </p>
+                <div class="socialMedia">
+                    <a class="padding05" href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg"
+                            alt="Facebook Icon" loading="lazy"></a>
+                    <a class="padding05" href="https://www.instagram.com/" target="_blank"><img
+                            src="images/instagram.svg" alt="Instagram Icon" loading="lazy"></a>
+                    <a class="padding05" href="https://www.twitter.com/" target="_blank"><img src="images/twitter.svg"
+                            alt="Twitter Icon" loading="lazy"></a>
+                </div>
+            </div>
+            <div>
+                <picture class="photo4"><img src="images/photo4.webp" alt="photo of smoothie in coconut" loading="lazy"></picture>
+                <div>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <!-- <button id="hamButton"><span>&#9776;</span></button> -->
+            <ul id="">
+                <li><a href="home.html">Home</a></li>
+
+                <li><a href="fresh.html">Fresh</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="attributions.html">Attributions</a></li>
+            </ul>
+        </nav>
+        <section class="bottomInfo">
+            <div>
+                <p>Bountiful Foods<br />
+                    2647 Gateway Rd, Carlsbad, CA 92009<br />
+                    &copy;<span id="year"></span> Bountiful Foods. All rights reserved.</p>
+            </div>
+            <div>
+                <p>☎️ (760) 331-2955</p>
+            </div>
+            <div>
+                <p>Last Modify: <span id="lastupdated"></span></p>
+            </div>
+        </section>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+
+</html>
