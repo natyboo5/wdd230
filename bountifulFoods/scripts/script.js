@@ -62,7 +62,8 @@ function displayData() {
 /*-- Button Listener --*/
 
 const mix = document.querySelector(".submitBtn");
-mix.addEventListener("click", createMix);
+if (mix) {
+mix.addEventListener("click", createMix);}
 
 function createMix() {
   
@@ -96,9 +97,9 @@ function createMix() {
   
 
   document.querySelector(".displayMix").appendChild(mixCard);
-  numberDrinks();
+  
   fruitCard();
- 
+  numberofDrinks();
 };
 
 function fruitCard() {
@@ -178,16 +179,20 @@ function fruitCard() {
 };
 
 
-function numberDrinks() {
-  let numberSD = parseInt(localStorage.getItem('orders')) + 1;
-  if (!numberSD) {numberSD = 1; }
-  localStorage.setItem('orders', numberSD);
+function numberofDrinks() {
+  let numberDrinks = parseInt(localStorage.getItem('numberOrders')) + 1;
+  if (!numberDrinks) {numberDrinks = 1; }
+  localStorage.setItem('numberOrders', numberDrinks);
 
-  console.log (numberSD);
-  document.getElementById('numberSpecialtyDrinks').textContent = numberSD;
+  console.log (numberDrinks);
+ 
+  document.getElementById('numberSpecDrinks').textContent = numberDrinks;
 
 };
 
 
-
+const drinks = document.querySelector('#numberSpecDrinks');
+  if (drinks) {
+   drinks.textContent = localStorage.getItem('numberOrders');
+  };
 

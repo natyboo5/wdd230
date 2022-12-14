@@ -2,13 +2,20 @@ const weatherURL =
   "https://api.openweathermap.org/data/2.5/weather?q=Carlsbad&units=imperial&appid=e873668f0886def8ce1ef00578214266";
 
 async function getWeather() {
+  
+  try {
   const response = await fetch(weatherURL);
   if (response.ok) {
     let weather = await response.json();
-    console.log(`test2`);
+   
     console.log(weather);
     displayWeather(weather);
-  }
+      } else {
+        throw Error(await response.text());
+      }
+      } catch (error) {
+        console.log(error);
+      }
 };
 
 getWeather();
@@ -25,13 +32,18 @@ function displayWeather(weather) {
 const forecastURL = "https://api.openweathermap.org/data/2.5/forecast/daily?lat=33.1581&lon=-117.350&cnt=5&units=imperial&appid=e873668f0886def8ce1ef00578214266";
 
 async function getForecast() {
-    const response = await fetch(forecastURL);
+  try{ 
+  const response = await fetch(forecastURL);
     if (response.ok) {
       let forecast = await response.json();
-
       console.log(forecast);
       displayForecast(forecast);
-    }
+      } else {
+        throw Error(await response.text());
+      }
+      } catch (error) {
+        console.log(error);
+      }
 };
   
 getForecast();
