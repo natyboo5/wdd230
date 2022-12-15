@@ -58,6 +58,12 @@
 
     }
 
+    .button1 {
+        background-color: var(--accent3);
+        border-radius: 20px;
+        padding: .5rem 1.5rem;
+    }
+
     section.welcome img {
         width: 50%;
         float: right;
@@ -70,7 +76,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin: 0 3rem;
+        margin: 3rem;
     }
 
     section.message1 img {

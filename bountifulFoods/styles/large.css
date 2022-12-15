@@ -59,9 +59,14 @@
 
     section.welcome {
         grid-column: 1/-1;
-        padding: 4rem 12rem 0rem 12rem;
+        padding: 4rem;
     }
 
+    .button1 {
+    background-color: var(--accent3);
+    border-radius: 20px;
+    padding: .5rem 3.5rem;
+}
     .button1 {
         flex-direction: row;
         justify-content: space-evenly;

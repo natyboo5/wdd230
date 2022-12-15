@@ -25,9 +25,10 @@ body {
 
 section.headertop {
     display: flex;
-    /* padding: 5px 0; */
+    padding: 1rem 0;
     align-items: center;
     justify-content: space-between;
+    background-color: #85bd30;
 }
 
 div.logo {
@@ -51,9 +52,9 @@ section.headings {
 
 h1 {font-size: 1em;}
 
-h2 {font-size: .85em;}
+/* h2 {font-size: .85em;} */
 
-h3, h4, p, a {font-size: .75em;}
+h2, h3, h4, p, a {font-size: .75em;}
 
 
 /* Navigation Styling */
@@ -82,12 +83,10 @@ nav button {
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin-right: 25px;
-    font-size: 1.5rem;
 }
 
 nav ul li {
-    font-size: .8rem;
+    font-size: 1.5rem;
 }
 
 nav ul li a {
@@ -144,7 +143,7 @@ main.mainContent {
 } */
 section.welcome {
     text-align: left;
-    margin: 0 1.5rem;
+    margin:1.5rem;
 }
 
 section.welcome img {
@@ -154,15 +153,16 @@ section.welcome img {
     margin-top: .5rem;
 }
 
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
 .button1 {
     background-color: var(--accent3);
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: .5rem 0;
+    padding: .5rem 1.5rem;
 }
-p.yourCart {
+.yourCart {
     grid-column: 1/-1;
     text-align: center;
     background-color: var(--secundary);
@@ -185,6 +185,7 @@ section.message1 {
     background-color: #e8c04a;
     text-align: center;
     align-items: center;
+    padding: 1rem;
 }
 
 .smoothie img{
@@ -225,8 +226,9 @@ section.message1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 3px solid var(--accent3);
-    padding-bottom: 1rem;
+    /* border: 3px solid var(--accent3); */
+    padding: 1rem;
+    margin: 1rem 0;
 }
 .weatherSection div {
     text-align: center;
@@ -258,8 +260,7 @@ section.message1 {
 
 .freshMain {
     margin: 0 auto;
-    text-align: center;
-     
+    text-align: center;  
 }
 
 .pageTitle {
@@ -275,7 +276,6 @@ form fieldset {
     margin: 1rem auto;
     border-radius: 10px;
  	width: 94%;
-    padding: .5rem 2%;
 }
 form legend {
     color: var(--accent2);
@@ -333,6 +333,19 @@ form textarea {
 
 .aboutBF img{
     width: 100%;
+}
+
+.inquiryBtn {
+    /* display: flex; */
+    text-align: center;
+    border: none;
+    background-color: var(--secundary);
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 2rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    
 }
 
 iframe {

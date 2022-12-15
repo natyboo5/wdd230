@@ -181,7 +181,10 @@ function fruitCard() {
 
 function numberofDrinks() {
   let numberDrinks = parseInt(localStorage.getItem('numberOrders')) + 1;
-  if (!numberDrinks) {numberDrinks = 1; }
+  if (!numberDrinks) {
+    numberDrinks = 1; 
+    } else {
+    numberDrinks = 0;}
   localStorage.setItem('numberOrders', numberDrinks);
 
   console.log (numberDrinks);
